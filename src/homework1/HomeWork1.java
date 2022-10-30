@@ -42,8 +42,11 @@ public class HomeWork1 {
 //   ლოგიკური ოპერატორის გამოყენების მაგალითები
 
         int age = 25;
-        boolean testBoolean = myAge == age; //მუდამ true დაბრუნდება ვინაიდან ჰარდად გაწერილი ცვლადები გვაქვს, რომლებიც ერთმანეთის ტოლია
-        boolean testBoolean2 = myAge < age; //მუდამ false დაბრუნდება ვინაიდან ჰარდად გაწერილი ცვლადები გვაქვს, რომლებიც ერთმანეთის ტოლია
+//   testBoolean-ში მუდამ true დაბრუნდება, ვინაიდან ლოგიკური ოპერატორი “ან“ გვაქვს გამოყენებული ჰარდად გაწერილ ცვლადებზე, რომლებიც ერთმანეთის ტოლია.
+        boolean testBoolean = myAge == age || myAge < age;
+//   testBoolean2-ში მუდამ false დაბრუნდება, ვინაიდან ლოგიკური ოპერატორი “და“ გვაქვს გამოყენებული ჰარდად გაწერილ ცვლადებზე, რომლებიც ერთმანეთის ტოლია.
+         boolean testBoolean2 = myAge == age && myAge < age;
+
 
 //   println() მეთოდის გამოყენება კონსოლში ჩანაწერის გამოსატანად
         System.out.println(birthMessage + dateofBirth + ageMessage + myAge + ".");
